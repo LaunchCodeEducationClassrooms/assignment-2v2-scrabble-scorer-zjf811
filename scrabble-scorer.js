@@ -93,11 +93,11 @@ function scorerPrompt() {
     scoreType = input.question(`Which scoring algorithm would you like to use? \nEnter 0, 1, or 2: `);
   }
   if (Number(scoreType) === 0) {
-    console.log(`Score for '${word}': ${scoringAlgorithms[0].scorerFunction(word)}`);
+    console.log(`Score for '${word}': ${scoringAlgorithms[0].scoringFunction(word)}`);
   } else if (Number(scoreType) === 1) {
-    console.log(`Score for '${word}': ${scoringAlgorithms[1].scorerFunction(word)}`);
+    console.log(`Score for '${word}': ${scoringAlgorithms[1].scoringFunction(word)}`);
   } else if (Number(scoreType) === 2) {
-    console.log(`Score for '${word}': ${scoringAlgorithms[2].scorerFunction(word)}`);
+    console.log(`Score for '${word}': ${scoringAlgorithms[2].scoringFunction(word)}`);
   }
 }
 
